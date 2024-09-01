@@ -31,3 +31,20 @@ variable "force_destroy_buckets" {
   type        = bool
   nullable    = false
 }
+
+# service account variables
+variable "app_service_account_id" {
+  description = "Service account id for application."
+  type        = string
+  nullable    = false
+}
+variable "app_service_account_display_name" {
+  description = "Service account display name for application."
+  type        = string
+  nullable    = false
+}
+variable "app_service_account_description" {
+  description = "Service account description for application."
+  type        = string
+  nullable    = false
+}
