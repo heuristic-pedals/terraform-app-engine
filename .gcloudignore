@@ -1,0 +1,13 @@
+<!-- Run cloud meta list-files-for-upload to check files for upload -->
+
+<!-- Default ignores -->
+.gcloudignore
+.git
+.gitignore
+#!include:.gitignore
+
+<!-- Additional files -->
+LICENSE
+.pre-commit-config.yaml
+README.md
+terraform/
