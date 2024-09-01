@@ -48,3 +48,40 @@ variable "app_service_account_description" {
   type        = string
   nullable    = false
 }
+
+# app configuration
+variable "app_version" {
+  description = "Application version."
+  type        = string
+  nullable    = false
+}
+variable "app_service" {
+  description = "Application GAE service name."
+  type        = string
+  nullable    = false
+}
+variable "max_instances" {
+  description = "Maximum number of GAE instances."
+  type        = number
+  nullable    = false
+}
+variable "idle_timeout" {
+  description = "Timeout, in seconds, before instances shutdown when idle."
+  type        = string
+  nullable    = false
+}
+variable "port" {
+  description = "Application port"
+  type        = number
+  nullable    = false
+}
+variable "bucket_source_zip_name" {
+  description = "Path to source code zip in GCP bucket"
+  type        = string
+  nullable    = false
+}
+variable "source_zip" {
+  description = "Source files in .zip archive"
+  type        = string
+  nullable    = false
+}
