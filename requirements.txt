@@ -1,0 +1,2 @@
+# app dependencies go here. Dev, docs and test in pyproject.toml
+fastapi[standard]==0.112.2
